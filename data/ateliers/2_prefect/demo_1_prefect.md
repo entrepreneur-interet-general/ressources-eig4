@@ -82,6 +82,8 @@ with DAG("xcom_dag", default_args=default_args, schedule_interval="@once", catch
   push_task >> pull_task
 ```
 
+/!\ Pas encore le concept de "trigger" / "hook" qui est dans airflow.
+
 ### Discussions
 
 #### Aller plus loin 
