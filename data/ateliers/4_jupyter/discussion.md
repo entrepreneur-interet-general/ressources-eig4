@@ -22,5 +22,6 @@ La configuration présenté dans `src` permet :
 - Installation de packages dans l'environment
 
 Infra s'appuyant sur des notebooks :
+- [Papermill](https://papermill.readthedocs.io/en/latest/)
 - [Netflix infrastructure](https://netflixtechblog.com/notebook-innovation-591ee3221233)
 - [Nope to the netflix infrastructure](https://www.youtube.com/watch?v=P-sWU2bNpPw&t)
