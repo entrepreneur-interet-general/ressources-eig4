@@ -11,8 +11,7 @@ services:
         volumes:
             - ./src/:/home/jovyan/work
             - ${P_NOTEBOOKS_DATA}:/data
-        ports:
-            - ${JUPYTER_BASE_PORT}:8888
+        command: jupyter lab --port ${JUPYTER_BASE_PORT}
     jupyter-spark:
         build:
             context: .
@@ -21,11 +20,10 @@ services:
                 - UID=${UID}
         image: jupyter-spark
         network_mode: "host"
+        command: jupyter lab --port ${JUPYTER_SPARK_PORT}
         volumes:
             - ./src/:/home/jovyan/work
             - ${P_NOTEBOOKS_DATA}:/data
-        ports:
-            - ${JUPYTER_SPARK_PORT}:8888
         environment:
             - PYSPARK_NUMBER_CORES=${PYSPARK_NUMBER_CORES}
             - PYSPARK_MEMORY_GB=${PYSPARK_MEMORY_GB}
