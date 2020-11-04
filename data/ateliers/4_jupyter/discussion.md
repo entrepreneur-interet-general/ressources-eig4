@@ -17,3 +17,4 @@ La configuration présenté dans `src` permet :
   - Pre commit pour effacer outputs + gitignore des ipynb_checkpoints
   - Export au format html mais perte des interactions
   - -> Go dash
+- Installation de packages dans l'environment

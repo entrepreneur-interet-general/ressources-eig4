@@ -1,5 +1,7 @@
 FROM jupyter-base
 
+ARG UID
+
 USER root
 # Pyspark
 WORKDIR /opt/
