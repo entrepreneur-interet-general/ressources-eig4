@@ -17,7 +17,7 @@ RUN jupyter labextension install jupyterlab-plotly plotlywidget @jupyter-widgets
 # Repos requirements
 RUN mkdir -p /home/jovyan/work
 WORKDIR /home/jovyan/work
-COPY src/requirements-base.txt .
+COPY jupyter/requirements-base.txt .
 RUN pip install -r requirements-base.txt
 
 ENV PYTHONPATH "${PYTONPATH}:/home/jovyan/work"

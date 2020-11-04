@@ -2,6 +2,8 @@
 
 Ce projet permet de rapidement configurer un environment jupyter lab sur sa machine.
 
+ALERT : Les notebooks ne sont pas à utiliser dans toutes les situations (petite présentation)[https://docs.google.com/presentation/d/1n2RlMdmv1p25Xy5thJUhkKGvjtV-dkAIsUXP-AL4ffI/edit#slide=id.g362da58057_0_1] ;)
+
 # Utilisation
 
 ## Pré-requis

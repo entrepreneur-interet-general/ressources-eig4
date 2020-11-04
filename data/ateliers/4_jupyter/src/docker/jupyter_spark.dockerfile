@@ -18,7 +18,7 @@ RUN apt-get install -y libpq-dev
 # Repos requirements
 RUN mkdir -p /home/jovyan/work
 WORKDIR /home/jovyan/work
-COPY src/requirements-spark.txt .
+COPY jupyter/requirements-spark.txt .
 RUN pip install -r requirements-spark.txt
 
 ENV PYTHONPATH "${PYTONPATH}:/home/jovyan/work"

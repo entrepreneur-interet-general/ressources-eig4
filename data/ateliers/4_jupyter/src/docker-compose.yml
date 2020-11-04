@@ -9,7 +9,7 @@ services:
         image: jupyter-base
         network_mode: "host"
         volumes:
-            - ./src/:/home/jovyan/work
+            - ./jupyter/:/home/jovyan/work
             - ${P_NOTEBOOKS_DATA}:/data
         command: jupyter lab --port ${JUPYTER_BASE_PORT}
     jupyter-spark:
@@ -22,7 +22,7 @@ services:
         network_mode: "host"
         command: jupyter lab --port ${JUPYTER_SPARK_PORT}
         volumes:
-            - ./src/:/home/jovyan/work
+            - ./jupyter/:/home/jovyan/work
             - ${P_NOTEBOOKS_DATA}:/data
         environment:
             - PYSPARK_NUMBER_CORES=${PYSPARK_NUMBER_CORES}
