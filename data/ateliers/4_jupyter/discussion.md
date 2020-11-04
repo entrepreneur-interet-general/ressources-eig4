@@ -1,5 +1,7 @@
 # Juptyer notebooks
 
+ALERT : Les notebooks ne sont pas à utiliser dans toutes les situations [petite présentation](https://docs.google.com/presentation/d/1n2RlMdmv1p25Xy5thJUhkKGvjtV-dkAIsUXP-AL4ffI/edit#slide=id.g362da58057_0_1)
+
 ## Une configuration "facile" via docker / docker-compose
 
 La configuration présenté dans `src` permet :
@@ -18,3 +20,7 @@ La configuration présenté dans `src` permet :
   - Export au format html mais perte des interactions
   - -> Go dash
 - Installation de packages dans l'environment
+
+Infra s'appuyant sur des notebooks :
+- [Netflix infrastructure](https://netflixtechblog.com/notebook-innovation-591ee3221233)
+- [Nope to the netflix infrastructure](https://www.youtube.com/watch?v=P-sWU2bNpPw&t)
