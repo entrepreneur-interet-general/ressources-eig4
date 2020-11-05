@@ -1,0 +1,35 @@
+version: '3'
+services:
+    jupyter-base:
+        build:
+            context: .
+            dockerfile: ./docker/jupyter_base.dockerfile
+            args:
+                - UID=${UID}
+        image: jupyter-base
+        network_mode: "host"
+        volumes:
+            - ./jupyter/:/home/jovyan/work
+            - ${P_NOTEBOOKS_DATA}:/data
+        command: jupyter lab --port ${JUPYTER_BASE_PORT}
+    jupyter-spark:
+        build:
+            context: .
+            dockerfile: ./docker/jupyter_spark.dockerfile
+            args:
+                - UID=${UID}
+        image: jupyter-spark
+        network_mode: "host"
+        command: jupyter lab --port ${JUPYTER_SPARK_PORT}
+        volumes:
+            - ./jupyter/:/home/jovyan/work
+            - ${P_NOTEBOOKS_DATA}:/data
+        environment:
+            - PYSPARK_NUMBER_CORES=${PYSPARK_NUMBER_CORES}
+            - PYSPARK_MEMORY_GB=${PYSPARK_MEMORY_GB}
+
+# networks:
+#   default:
+#     external:
+#       name: another-network
+
