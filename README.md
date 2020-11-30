@@ -8,3 +8,5 @@ Vos contributions sont les bienvenues dans ces quatre espaces :
 2. Design
 3. Dev
 4. Transverse
+
+Pour contribuer à la documentation et valorisation du programme, vous pouvez partager les publications et communications sur vos défis dans la [Revue de Presse](Revue-presse.md)
