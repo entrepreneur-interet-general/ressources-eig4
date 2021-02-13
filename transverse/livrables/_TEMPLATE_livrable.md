@@ -1,6 +1,6 @@
 # NOM_DU_LIVRABLE
 
-courte description
+courte description.
 
 ## Pour qui ?
 
